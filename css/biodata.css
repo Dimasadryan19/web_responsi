@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  font-size: 30px;
+  padding: 10px;
+  background-color: #436850;
+  text-align: center;
+  color: #d1efdc;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 40px;
+
+}
+
+h3{
+  font-size: 20px;
+}
+
+h2, h3 {
+  color: #436850;
+}
+.card p {
+  text-align: justify;
+}
+
+
+footer {
+  padding: 20px;
+  color: #d1efdc;
+  background-color: #436850;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a {
+  font-size:18px;
+  font-weight: 400;
+  text-decoration: none;
+
+  color: #d1efdc;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  background-color: #FBFADA;
+  box-shadow: 0 4px 8px 0 #12372A;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+nav ul {
+  padding-inline: 3rem;
+  display: flex;
+  gap:2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  background-color: #12372A;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+main {
+  background-color: #ADBC9F ;
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+}
+
+header {
+  display: inline;
+}
+
+table li {
+  list-style-type: none;
+}
+
+table li a {
+  color: #12372A;
+}
+
+.slider {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: 100%; 
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1; 
+}
+
+.prev, .next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+table td {
+  font-weight: bold;
+
+}
+
+.card .diri {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 250px; /* Gambar lebih besar */
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #888;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card .diri:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav ul {
+  justify-content: center;
+}
+
+main aside {
+  align-self: stretch;
+}   
+}
